@@ -1,5 +1,8 @@
 # tensorflow2.0-yolo3
 
+# Introduction
+A  implementation of YOLOv3 (Tensorflow 2.0) inspired by [qqwwee/keras-yolor](https://github.com/qqwweee/keras-yolo3).
+
 # Quick Start
 - Download YOLOv3 weights from YOLO website.
 - Convert the Darknet YOLO model to a Keras model.
