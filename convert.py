@@ -104,7 +104,7 @@ def _main(args):
             # Setting weights.
             # Darknet serializes convolutional weights as:
             # [bias/beta, [gamma, mean, variance], conv_weights]
-            prev_layer_shape = K.int_shape(prev_layer)
+            prev_layer_shape = prev_layer.get_shape().as_list()
 
             weights_shape = (size, size, prev_layer_shape[-1], filters)
             darknet_w_shape = (filters, weights_shape[2], size, size)
